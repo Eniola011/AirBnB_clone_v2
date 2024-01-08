@@ -30,7 +30,7 @@ def states_list(id=None):
     s = "State.{}".format(id)
     if s in states:
         return render_template('9-states.html',
-                               Table: 'State: {}'.format(states[s].name),
+                               Table='State: {}'.format(states[s].name),
                                items=states[s])
 
     return render_template('9-states.html', items=None)
